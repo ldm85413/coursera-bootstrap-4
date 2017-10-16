@@ -45,7 +45,7 @@
           <img src="img/logo.png" class="mx-auto d-block img-responsive">
         </div>
         <div class="col-3 col-sm-3 align-self-center m-0 p-0">
-          <button type="button" class="btn btn-warning btn-block">Reserve table</button>
+          <a href="#reservation"  class="btn btn-warning btn-block" role="button">Reserve table</a>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@
       <div class="col-sm col-md flex-last">
         <div class="media">
           <div class="media-body">
-            <h2 class="mt-0">Weekend Grand Buffet</h2>
+            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
             <p class="hidden-xs-down">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person.</p>
           </div>
           <img class="d-flex ml-3 img-thumbnail align-self-center" src="img/buffet.png" alt="Buffet">
@@ -99,7 +99,92 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="row row-content align-items-center">
+      <div class="col-1">
+      </div>
+      <div class="col-10">
+        <div class="card" id="reservation">
+          <div class="card-header text-white bg-warning">
+            <h4>Reserve a Table</h4>
+          </div>
+          <div class="card-body p-3">
+            <form>
+              <!-- radio buttons -->
+              <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-legend col-2">Number of guests</legend>
+                <div class="col-auto align-self-center">
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 1
+                  </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 2
+                  </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 3
+                  </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4"> 4
+                  </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="5"> 5
+                  </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="6"> 6
+                  </label>
+                  </div>
+                </div>
+              </div>
+              </fieldset>
+              <!-- end radio buttons -->
+              <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-legend col-2">Date and Time</legend>
+                <div class="col-4 align-self-center">
+                  <label class="sr-only" for="DateInput">Username</label>
+                  <div class="input-group ml-0 mb-sm-0">
+                    <span class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                    </span>
+                    <input type="text" class="form-control" id="DateInput" placeholder="Date">
+                  </div>
+                </div>
+                <div class="col-4 align-self-center">
+                  <label class="sr-only" for="TimeInput">Username</label>
+                    <div class="input-group mb-0 mb-sm-0">
+                    <span class="input-group-addon">
+                      <span class="fa fa-clock-o"></span>
+                    </span>
+                      <input type="text" class="form-control" id="TimeInput" placeholder="Time">
+                    </div>
+                </div>
+              </div>
+                
+              </fieldset>
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-auto align-self-center">
+                <button type="submit" class="btn btn-primary mb-1">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <!-- class="container" -->
   <footer class="footer">
